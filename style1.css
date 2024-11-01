@@ -1,0 +1,113 @@
+main .hero-section{
+    background: linear-gradient(to right, #191A3B, #19429D);
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 25px;
+}
+
+main .hero-section .one {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;    
+    width: 50%;
+    gap: 20px;
+}
+
+main .hero-section .one .title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+main .hero-section .one .desc{
+    color: #fff;
+    font-size: 16px;
+}
+
+main .hero-section .one a .btn{
+    background-color: #0029FF;
+    margin-top: 10px;
+    padding: 15px;
+    width: 20%;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.352);
+    cursor: pointer;
+}
+
+main .hero-section .one a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+main .hero-section .two{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .hero-section .two img{
+    width: 50%;
+    border-radius: 15px;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: -30px;
+    margin-top: -30px;
+    z-index: 1;
+}
+
+section .container {
+    padding: 20px 30px;
+    background-color: #F7FAFC;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.352);
+    width: 75%;
+    border-radius: 5px;
+}
+
+section .container h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+section .container .descp {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+section .container .descp p {
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 15px 5px;
+}
+
+.head {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.pre {
+    margin-bottom: 20px;
+}
