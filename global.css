@@ -1,29 +1,97 @@
-*{
-    margin: 0px 0px;
-    padding: 0px 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", sans-serif;
     font-style: normal;
+    box-sizing: border-box;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 20px;
+    padding: 15px;
     background: #F0F0F0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.352);
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
+@media (min-width: 768px) {
+    .nav {
+        padding: 25px 20px;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+}
 
-.nav .icons{
+.nav .icons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
-.nav .icons .links a{
-    font-size: 20px;
+@media (min-width: 768px) {
+    .nav .icons {
+        width: auto;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+}
+
+.nav .icons .links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .nav .icons .links {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+}
+
+.nav .icons .links a {
+    font-size: 16px;
     text-decoration: none;
     color: #0029FF;
     font-weight: 500;
+    padding: 8px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .nav .icons .links a {
+        font-size: 20px;
+    }
+}
+
+.nav .icons .links a:hover {
+    background-color: rgba(0, 41, 255, 0.1);
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+    .nav {
+        padding: 10px;
+    }
+    
+    .nav .icons {
+        gap: 10px;
+    }
+    
+    .nav .icons .links {
+        gap: 10px;
+    }
+    
+    .nav .icons .links a {
+        font-size: 14px;
+        padding: 6px;
+    }
 }
